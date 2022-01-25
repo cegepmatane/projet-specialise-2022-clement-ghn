@@ -8,3 +8,6 @@ https://docs.google.com/presentation/d/1C9VlmGVLXPa7hxorQEG28GppOmkmoxxamUNddVeS
 
 Grille de comparaison :
 https://docs.google.com/presentation/d/1XoxxmyW58jMJ38WD3Sv9ZF4G6bY7kpNMWRintwLoXb4/edit?usp=sharing
+
+Fiche PoC & Choix technologiques :
+https://docs.google.com/document/d/1ulRUqjoijqGG6_KbEZ1IZ8849CPHGS82gWj-PfxUBAM/edit?usp=sharing
