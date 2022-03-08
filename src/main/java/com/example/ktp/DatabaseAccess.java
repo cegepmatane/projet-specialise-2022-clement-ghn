@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 public class DatabaseAccess {
 
     private DatabaseOpenHelper openHelper;//Declaration de DatabaseOpenHelper
-    private SQLiteDatabase db;//Objt SQLite db
+    private SQLiteDatabase BaseDeDonnees;//Objet SQLite db
     private static DatabaseAccess instance;
     Cursor c = null; //contient resultat de requête sur une bdd
 
@@ -23,12 +23,12 @@ public class DatabaseAccess {
     }
 
     public void open(){//Ouverture de la BDD
-        this.db=openHelper.getWritableDatabase();
+        this.BaseDeDonnees=openHelper.getWritableDatabase();
     }
 
     public void close(){//Fermeture de la BDD
-        if(db!=null){
-            this.db.close();
+        if(BaseDeDonnees!=null){
+            this.BaseDeDonnees.close();
         }
     }
 
@@ -36,14 +36,13 @@ public class DatabaseAccess {
     //Requête vers la BDD
 
     public String getpartie(String partie){
-        c=db.rawQuery("select id from exercices where partie = ?",new String[]{partie});
+        c=BaseDeDonnees.rawQuery("select nombre_rep from Exercices where partie = ?",new String[]{partie});
 
+        if(c.getCount()!=1){
+            return "erreur";
+        }
         c.moveToFirst();
         return  c.getString(0);
     }
-
-
-
-
 
 }
