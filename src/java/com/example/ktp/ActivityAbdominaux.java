@@ -5,24 +5,22 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Activity3 extends AppCompatActivity {
+public class ActivityAbdominaux extends AppCompatActivity {
 
     private String partie = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_3);
-
+        setContentView(R.layout.activity_abdominaux);
 
         //ouverture de la BDD
         final DatabaseAccess db = DatabaseAccess.getInstance(getApplicationContext());
         db.open();
 
-        partie = db.getpartie("jambes");
+        partie = db.getpartie("abdominau");
 
-        TextView databasetest = (TextView) findViewById(R.id.databasetest);
-        databasetest.setText(partie);
-
+        TextView BaseDeDonneesExercices = (TextView) findViewById(R.id.BaseDeDonneesExercices);
+        BaseDeDonneesExercices.setText(partie);
 
         db.close();
     }
