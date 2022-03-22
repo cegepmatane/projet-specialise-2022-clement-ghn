@@ -12,5 +12,6 @@ https://docs.google.com/presentation/d/1XoxxmyW58jMJ38WD3Sv9ZF4G6bY7kpNMWRintwLo
 Fiche PoC & Choix technologiques :
 https://docs.google.com/document/d/1ulRUqjoijqGG6_KbEZ1IZ8849CPHGS82gWj-PfxUBAM/edit?usp=sharing
 
-Mini dossier fonctionnel :
+Mini dossier fonctionnel de l'itération 3 :
 https://docs.google.com/presentation/d/1Wtm8oLAyvxLK4TZp1FiWBz5JATm5zC_tmolvKbiNCfg/edit#slide=id.p
+(celui del'itération 2 se situe dans la partie doc)
